@@ -10,8 +10,72 @@
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+      <style>
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      button {
+        font-size: 35px;
+        background-color: #2196F3;
+        border: 1px solid;
+      }
+      </style>
+
     </head>
+
     <body>
-      <h1>Browser Template</h1>
+
+      <h1>I LIKE YOU</h1>
+      <h2>A friending app</h2>
+
+      <p id="message"></p>
+
+      <button id="create-user" class="button">Create User</button>
+      <button id="update-user" class="button">Update User</button>
+      <button id="user-info" class="button">User Info</button>
+
+
+        <form id="sign-up" class="border">
+          <fieldset>
+            <legend> Sign Up! </legend>
+            <input type="text" name="credentials[email]" placeholder="Email">
+            <input type="password" name="credentials[password]" placeholder="Password">
+            <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+            <input type="submit" value="Sign up!">
+          </fieldset>
+        </form>
+
+        <form id="sign-in" class="border">
+          <fieldset>
+            <legend> Sign In (and Create User)! </legend>
+            <input type="text" name="credentials[email]" placeholder="Email">
+            <input type="password" name="credentials[password]" placeholder="Password">
+            <input type="submit" value="Sign in!">
+          </fieldset>
+        </form>
+
+        <form id="change-password" class="border">
+           <fieldset>
+             <legend>Change password!</legend>
+             <input type="password" name="passwords[old]" placeholder="Old password">
+             <input type="password" name="passwords[new]" placeholder="New password">
+             <input type="submit" value="Change password!">
+           </fieldset>
+        </form>
+
+        <form id="sign-out" class="border">
+          <fieldset>
+            <legend> Sign Out! </legend>
+            <input type="submit" value="Sign out!">
+          </fieldset>
+        </form>
+
     </body>
 </html>
