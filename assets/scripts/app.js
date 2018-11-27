@@ -19,3 +19,5 @@ $(() => {
 
 // $('#create-user').on('click', userEvents.onCreateUserClick)
 // $('#update-user').on('click', userEvents.onUpdateUserClick)
+// $('#user-info').on('click', userEvents.onUserInfoClick)
+// $('#delete-user').on('click', userEvents.onDeleteUserClick)
