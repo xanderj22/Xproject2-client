@@ -5,6 +5,8 @@
 
 const authEvents = require('./auth/events.js')
 // const userEvents = require('./user/events.js')
+const userEvents = require('./user/events.js')
+const likesEvents = require('./likes/events.js')
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
@@ -17,7 +19,9 @@ $(() => {
   $('#sign-out').on('submit', authEvents.onSignOut)
 })
 
-// $('#create-user').on('click', userEvents.onCreateUserClick)
+$('#create-profile-form').on('submit', userEvents.onCreateProfile)
+$('#likes-form').on('submit', likesEvents.onLikesSubmit)
+
 // $('#update-user').on('click', userEvents.onUpdateUserClick)
 // $('#user-info').on('click', userEvents.onUserInfoClick)
 // $('#delete-user').on('click', userEvents.onDeleteUserClick)

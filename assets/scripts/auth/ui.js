@@ -6,6 +6,9 @@ const signUpSuccess = data => {
   $('#message').text('I LIKE YOU !!')
   $('#message').removeClass()
   $('#message').addClass('success-signup')
+  $('#signupemail').val('')
+  $('#signuppassword').val('')
+  $('#signuppasswordconfirm').val('')
   // console.log('signUpSuccess ran. Data is :', data)
 }
 
@@ -22,6 +25,9 @@ const signInSuccess = data => {
   setTimeout(clearText, 2800)
   $('#message').removeClass()
   $('#message').addClass('success')
+  $('#signinemail').val('')
+  $('#signinpassword').val('')
+  $('#signinpasswordconfirm').val('')
   // console.log('signInSuccess ran. Data is :', data)
 }
 
@@ -52,6 +58,7 @@ const signOutSuccess = data => {
   store.user = null
   $('#message').removeClass()
   $('#message').addClass('success')
+  setTimeout(clearText, 2800)
   // console.log('signOutSuccess ran. Data is :', data)
 }
 
