@@ -17,10 +17,9 @@ $(() => {
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('submit', authEvents.onSignOut)
+  $('#create-profile-form').on('submit', userEvents.onCreateProfile)
+  $('#likes-form').on('submit', likesEvents.onLikesSubmit)
 })
-
-$('#create-profile-form').on('submit', userEvents.onCreateProfile)
-$('#likes-form').on('submit', likesEvents.onLikesSubmit)
 
 // $('#update-user').on('click', userEvents.onUpdateUserClick)
 // $('#user-info').on('click', userEvents.onUserInfoClick)
