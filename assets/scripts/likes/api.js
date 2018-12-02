@@ -7,6 +7,9 @@ const create = function (data) {
   return $.ajax({
     url: config.apiUrl + '/likes',
     method: 'POST',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
     data
   })
 }

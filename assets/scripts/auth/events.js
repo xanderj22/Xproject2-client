@@ -3,6 +3,7 @@
 const getFormFields = require('../../../lib/get-form-fields.js')
 const api = require('./api.js')
 const ui = require('./ui.js')
+const store = require('../store.js')
 
 const onSignUp = event => {
   event.preventDefault()
@@ -36,6 +37,7 @@ const onSignOut = event => {
   event.preventDefault()
   $('#message').text('You are signed out!')
   api.signOut()
+    .then(function () { store.user = {} })
   // .then(ui.signOutSuccess)
   // .catch(ui.signOutFailure)
   // $('.grid-container').css('display', 'none')

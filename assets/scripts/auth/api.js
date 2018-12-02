@@ -20,6 +20,7 @@ const signIn = data => {
 }
 
 const changePassword = data => {
+  console.log('in the change password method', store.user.token)
   return $.ajax({
     url: config.apiUrl + '/change-password',
     method: 'PATCH',

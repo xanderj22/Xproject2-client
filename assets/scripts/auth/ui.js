@@ -21,6 +21,8 @@ const signUpFailure = error => {
 
 const signInSuccess = data => {
   store.user = data.user
+  console.log(store.user)
+  console.log(data)
   $('#message').text('Signed in successfully')
   setTimeout(clearText, 2800)
   $('#message').removeClass()
