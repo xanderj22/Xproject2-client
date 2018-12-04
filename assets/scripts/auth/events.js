@@ -39,7 +39,7 @@ const onSignOut = event => {
   api.signOut()
     .then(function () { store.user = {} })
   // .then(ui.signOutSuccess)
-  // .catch(ui.signOutFailure)
+    .catch(ui.signOutFailure)
   // $('.grid-container').css('display', 'none')
 }
 

@@ -45,6 +45,8 @@ const changePasswordSuccess = data => {
   setTimeout(clearText, 2800)
   $('#message').removeClass()
   $('#message').addClass('success')
+  $('#oldpass').val('')
+  $('#newpass').val('')
   // console.log('changePasswordSuccess ran. Data is :', data)
 }
 

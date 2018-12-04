@@ -18,6 +18,8 @@ $(() => {
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('submit', authEvents.onSignOut)
   $('#create-profile-form').on('submit', userEvents.onCreateProfile)
+  $('#update-profile-form').on('submit', userEvents.onUpdateProfile)
+  $('#delete-profile').on('submit', userEvents.onDeleteProfile)
   $('#likes-form').on('submit', likesEvents.onLikesSubmit)
 })
 

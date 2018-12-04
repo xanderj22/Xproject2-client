@@ -79,8 +79,8 @@
         <form id="change-password" class="border">
            <fieldset>
              <legend>Change password!</legend>
-             <input type="password" name="passwords[old]" placeholder="Old password">
-             <input type="password" name="passwords[new]" placeholder="New password">
+             <input type="password" name="passwords[old]" placeholder="Old password" id="oldpass">
+             <input type="password" name="passwords[new]" placeholder="New password" id="newpass">
              <input type="submit" value="Change password!">
            </fieldset>
         </form>
@@ -95,7 +95,7 @@
         <h2></h2>
 
       <form class="user" id="create-profile-form">
-        <button type="submit" class="btn btn-default">Create Profile</button>
+        <button type="submit" class="btn btn-default">Create Profile or Update Current Profile</button>
         <div class="form-group">
           <input required type="text" name="user[User_Name]" placeholder="User Name">
           <input required type="text" name="user[Location]" placeholder="Location">
@@ -105,6 +105,16 @@
         </div>
       </form>
 
+      <form class="user" id="update-profile-form">
+        <button type="submit" class="btn btn-default">Update Profile</button>
+        <div class="form-group">
+          <input type="text" name="user[User_Name]" placeholder="User Name">
+          <input type="text" name="user[Location]" placeholder="Location">
+          <input type="text" name="user[About]" placeholder="About">
+          <input type="text" name="user[Gender_Identity]" placeholder="Gender Identity">
+          <input type="text" name="user[Preferred_Pronoun]" placeholder="Preferred Pronoun">
+        </div>
+      </form>
 
     <form class="user" id="likes-form">
       <button type="submit" class="btn btn-default">Likes?</button>
@@ -115,6 +125,10 @@
         <input required type="text" name="like[gender_prefs]" placeholder="Gender Prefs">
         <input required type="text" name="like[searching_for]" placeholder="Searching for?">
       </div>
+    </form>
+
+    <form class="user" id="delete-profile">
+      <button type="submit" class="btn btn-default">Delete Profile</button>
     </form>
 
         <h3></h3>

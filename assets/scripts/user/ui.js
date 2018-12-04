@@ -8,6 +8,17 @@ const onCreateProfileSuccess = function () {
   $('#create-profile-form').trigger('reset')
 }
 
+const onUpdateProfileSuccess = function () {
+  $('#content').html('Thanks for updating!')
+  // reset form
+  $('#update-profile-form').trigger('reset')
+}
+
+const onDeleteProfileSuccess = function () {
+  $('#content').html('Profile Deleted!')
+  $('#delete-profile').trigger('reset')
+}
+
 const onFailure = function (response) {
   // log the error
   console.error(response)
@@ -18,5 +29,7 @@ const onFailure = function (response) {
 
 module.exports = {
   onCreateProfileSuccess,
+  onUpdateProfileSuccess,
+  onDeleteProfileSuccess,
   onFailure
 }

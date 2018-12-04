@@ -9,7 +9,7 @@ const onLikesSubmit = function (event) {
   const data = getFormFields(event.target)
   api.create(data)
     .then(ui.onCreateSuccess)
-    .catch(ui.onError)
+    .catch(ui.onFailure)
 }
 
 module.exports = {
