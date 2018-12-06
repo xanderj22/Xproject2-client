@@ -21,8 +21,9 @@ $(() => {
   $('#update-profile-form').on('submit', userEvents.onUpdateProfile)
   $('#delete-profile').on('submit', userEvents.onDeleteProfile)
   $('#likes-form').on('submit', likesEvents.onLikesSubmit)
+  $('#show-user-info').on('submit', userEvents.onShowUserInfo)
 })
 
 // $('#update-user').on('click', userEvents.onUpdateUserClick)
-// $('#user-info').on('click', userEvents.onUserInfoClick)
+// $('#show-user-info').on('click', userEvents.onShowUserInfoClick)
 // $('#delete-user').on('click', userEvents.onDeleteUserClick)

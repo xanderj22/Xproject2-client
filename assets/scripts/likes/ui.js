@@ -3,9 +3,14 @@
 const store = require('../store.js')
 
 const onCreateLikesSuccess = function () {
-  $('#content').html('Thanks for sharing!')
+  $('#message').html('Thanks for sharing!')
   // reset form
   $('#likes-form').trigger('reset')
+  $('#userinterests').val('')
+  $('#userfaves').val('')
+  $('#personalities').val('')
+  $('#genderprefs').val('')
+  $('#usersearch').val('')
 }
 
 const onFailure = function (response) {
@@ -13,7 +18,7 @@ const onFailure = function (response) {
   console.error(response)
 
   // display error to user
-  $('#content').html('Something went wrong, please try again.')
+  $('#message').html('Something went wrong, please try again.')
 }
 
 module.exports = {

@@ -25,6 +25,17 @@ const update = function (data) {
   })
 }
 
+const showUserInfo = () => {
+  console.log('show info', store.user.token)
+  return $.ajax({
+    url: config.apiUrl + '/users/' + store.user.id,
+    method: 'GET',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+
 const deleteProfile = () => {
   console.log('delete profile', store.user.token)
   return $.ajax({
@@ -39,5 +50,6 @@ const deleteProfile = () => {
 module.exports = {
   create,
   update,
+  showUserInfo,
   deleteProfile
 }

@@ -3,19 +3,30 @@
 const store = require('../store.js')
 
 const onCreateProfileSuccess = function () {
-  $('#content').html('Welcome Friend!')
+  $('#message').html('Welcome Friend!')
   // reset form
   $('#create-profile-form').trigger('reset')
+  $('#username').val('')
+  $('#userlocation').val('')
+  $('#aboutuser').val('')
+  $('#useridentity').val('')
+  $('#userpronoun').val('')
 }
 
 const onUpdateProfileSuccess = function () {
-  $('#content').html('Thanks for updating!')
+  $('#message').html('Thanks for updating!')
   // reset form
   $('#update-profile-form').trigger('reset')
 }
 
+const onShowUserInfoSuccess = function () {
+  $('#message').html('Thanks for sharing!')
+  // reset form
+  $('#show-user-info').trigger('reset')
+}
+
 const onDeleteProfileSuccess = function () {
-  $('#content').html('Profile Deleted!')
+  $('#message').html('Profile Deleted!')
   $('#delete-profile').trigger('reset')
 }
 
@@ -24,12 +35,13 @@ const onFailure = function (response) {
   console.error(response)
 
   // display error to user
-  $('#content').html('Something went wrong, please try again.')
+  $('#message').html('Something went wrong, please try again.')
 }
 
 module.exports = {
   onCreateProfileSuccess,
   onUpdateProfileSuccess,
+  onShowUserInfoSuccess,
   onDeleteProfileSuccess,
   onFailure
 }

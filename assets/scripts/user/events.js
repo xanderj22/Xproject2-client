@@ -23,6 +23,15 @@ const onUpdateProfile = function (event) {
     .catch(ui.onFailure)
 }
 
+const onShowUserInfo = function (event) {
+  event.preventDefault()
+  const data = getFormFields(event.target)
+  data.user.email = store.user.email
+  api.showUserInfo(data)
+    .then(ui.onCreateSuccess)
+    .catch(ui.onFailure)
+}
+
 const onDeleteProfile = function (event) {
   event.preventDefault()
   // const data = getFormFields(event.target)
@@ -35,5 +44,6 @@ const onDeleteProfile = function (event) {
 module.exports = {
   onCreateProfile,
   onUpdateProfile,
+  onShowUserInfo,
   onDeleteProfile
 }

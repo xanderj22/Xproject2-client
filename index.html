@@ -97,33 +97,33 @@
       <form class="user" id="create-profile-form">
         <button type="submit" class="btn btn-default">Create Profile or Update Current Profile</button>
         <div class="form-group">
-          <input required type="text" name="user[User_Name]" placeholder="User Name">
-          <input required type="text" name="user[Location]" placeholder="Location">
-          <input required type="text" name="user[About]" placeholder="About">
-          <input required type="text" name="user[Gender_Identity]" placeholder="Gender Identity">
-          <input required type="text" name="user[Preferred_Pronoun]" placeholder="Preferred Pronoun">
-        </div>
-      </form>
-
-      <form class="user" id="update-profile-form">
-        <button type="submit" class="btn btn-default">Update Profile</button>
-        <div class="form-group">
-          <input type="text" name="user[User_Name]" placeholder="User Name">
-          <input type="text" name="user[Location]" placeholder="Location">
-          <input type="text" name="user[About]" placeholder="About">
-          <input type="text" name="user[Gender_Identity]" placeholder="Gender Identity">
-          <input type="text" name="user[Preferred_Pronoun]" placeholder="Preferred Pronoun">
+          <input required type="text" name="user[User_Name]" placeholder="User Name" id="username">
+          <input required type="text" name="user[Location]" placeholder="Location" id="userlocation">
+          <input required type="text" name="user[About]" placeholder="About" id="aboutuser">
+          <input required type="text" name="user[Gender_Identity]" placeholder="Gender Identity" id="useridentity">
+          <input required type="text" name="user[Preferred_Pronoun]" placeholder="Preferred Pronoun" id="userpronoun">
         </div>
       </form>
 
     <form class="user" id="likes-form">
       <button type="submit" class="btn btn-default">Likes?</button>
       <div class="form-group">
-        <input required type="text" name="like[interests]" placeholder="Interests">
-        <input required type="text" name="like[five_fave_things]" placeholder="5 Fave Things">
-        <input required type="text" name="like[personality_types]" placeholder="Personality Types">
-        <input required type="text" name="like[gender_prefs]" placeholder="Gender Prefs">
-        <input required type="text" name="like[searching_for]" placeholder="Searching for?">
+        <input required type="text" name="like[interests]" placeholder="Interests" id="userinterests">
+        <input required type="text" name="like[five_fave_things]" placeholder="5 Fave Things" id="userfaves">
+        <input required type="text" name="like[personality_types]" placeholder="Personality Types" id="personalities">
+        <input required type="text" name="like[gender_prefs]" placeholder="Gender Prefs" id="genderprefs">
+        <input required type="text" name="like[searching_for]" placeholder="Searching for?" id="usersearch">
+      </div>
+    </form>
+
+    <form class="user" id="user-info-form">
+      <button type="submit" class="btn btn-default">User Info</button>
+      <div class="form-group">
+        <input type="text" name="user[User_Name]" placeholder="User Name" id="username">
+        <input type="text" name="user[Location]" placeholder="Location" id="userlocation">
+        <input type="text" name="user[About]" placeholder="About" id="aboutuser">
+        <input type="text" name="user[Gender_Identity]" placeholder="Gender Identity" id="useridentity">
+        <input type="text" name="user[Preferred_Pronoun]" placeholder="Preferred Pronoun" id="userpronoun">
       </div>
     </form>
 
