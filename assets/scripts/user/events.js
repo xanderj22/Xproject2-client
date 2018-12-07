@@ -10,7 +10,7 @@ const onCreateProfile = function (event) {
   const data = getFormFields(event.target)
   data.user.email = store.user.email
   api.create(data)
-    .then(ui.onCreateSuccess)
+    .then(ui.onCreateProfileSuccess)
     .catch(ui.onFailure)
 }
 
@@ -19,16 +19,16 @@ const onUpdateProfile = function (event) {
   const data = getFormFields(event.target)
   data.user.email = store.user.email
   api.update(data)
-    .then(ui.onCreateSuccess)
+    .then(ui.onUpdateProfileSuccess)
     .catch(ui.onFailure)
 }
 
 const onShowUserInfo = function (event) {
   event.preventDefault()
-  const data = getFormFields(event.target)
-  data.user.email = store.user.email
-  api.showUserInfo(data)
-    .then(ui.onCreateSuccess)
+  // const data = getFormFields(event.target)
+  // data.user.email = store.user.email
+  api.showUserInfo()
+    .then(ui.onShowUserInfoSuccess)
     .catch(ui.onFailure)
 }
 
@@ -38,6 +38,7 @@ const onDeleteProfile = function (event) {
   // data.user.email = store.user.email
   api.deleteProfile()
     .then(function () { store.user = {} })
+    .then(ui.onDeleteProfileSuccess)
     .catch(ui.onFailure)
 }
 
