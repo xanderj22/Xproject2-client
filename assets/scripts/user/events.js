@@ -12,6 +12,7 @@ const onCreateProfile = function (event) {
   api.create(data)
     .then(ui.onCreateProfileSuccess)
     .catch(ui.onFailure)
+  $('.delete-user').css('display', 'grid')
 }
 
 const onUpdateProfile = function (event) {
@@ -30,6 +31,7 @@ const onShowUserInfo = function (event) {
   api.showUserInfo()
     .then(ui.onShowUserInfoSuccess)
     .catch(ui.onFailure)
+  $('.delete-user').css('display', 'grid')
 }
 
 const onDeleteProfile = function (event) {
@@ -40,6 +42,8 @@ const onDeleteProfile = function (event) {
     .then(function () { store.user = {} })
     .then(ui.onDeleteProfileSuccess)
     .catch(ui.onFailure)
+  $('#show-user-info').css('display', 'none')
+  $('#user-profile-info').html('Goodbye')
 }
 
 module.exports = {

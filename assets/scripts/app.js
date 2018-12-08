@@ -18,10 +18,11 @@ $(() => {
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('submit', authEvents.onSignOut)
   $('#create-profile-form').on('submit', userEvents.onCreateProfile)
-  $('#update-profile-form').on('submit', userEvents.onUpdateProfile)
+  // $('#update-profile-form').on('submit', userEvents.onUpdateProfile)
   $('#delete-profile').on('submit', userEvents.onDeleteProfile)
   $('#likes-form').on('submit', likesEvents.onLikesSubmit)
   $('#show-user-info').on('submit', userEvents.onShowUserInfo)
+  // $('#show-user-likes').on('submit', likesEvents.onShowUserLikes)
 })
 
 // $('#update-user').on('click', userEvents.onUpdateUserClick)

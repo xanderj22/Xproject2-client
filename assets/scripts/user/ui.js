@@ -23,12 +23,11 @@ const onShowUserInfoSuccess = function (data) {
   console.log(data)
   const template = `<table style="width:100%">
     <tr>
-      <th>User_Name</th>
+      <th>User Name</th>
       <th>Location</th>
       <th>About</th>
-      <th>Gender_Identity</th>
-      <th>Preferred_Pronoun</th>
-
+      <th>Gender Identity</th>
+      <th>Preferred Pronoun</th>
     </tr>
     <tr>
       <td>${data.user.User_Name}</td>
@@ -40,7 +39,7 @@ const onShowUserInfoSuccess = function (data) {
   </table>`
 
   $('#user-profile-info').html(template)
-  $('#message').html('Thanks for sharing!')
+  $('#message').html('Current Profile')
   // reset form
   $('#show-user-info').trigger('reset')
 }

@@ -23,64 +23,85 @@ $black: #000;
   }
 }
 
-.button {
-  margin: 20px;
-  padding: 20px;
-  height: auto;
-  width: 300px;
-  display: inline-block;
-  justify-content: space-between;
-
-}
-#create-user {
-  font-size: 25px;
-  color: purple;
-  background-color: #2196F3;
-  margin-right: 25px;
-  margin-left: 40px;
-
-}
-
-#update-user {
-  font-size: 25px;
-  color: purple;
-  background-color: #2196F3;
-  margin-left: 25px;
-  marign-right: 25px;
-
-}
-
-#user-info {
-  font-size: 25px;
-  color: purple;
-  background-color: #2196F3;
-  margin-right: 25px;
-  margin-left: 25px;
-}
-
-#delete-user {
-  font-size: 25px;
-  color: purple;
-  background-color: #2196F3;
-  margin-right: 25px;
-  margin-left: 25px;
-}
+// .button {
+//   margin: 20px;
+//   padding: 20px;
+//   height: auto;
+//   width: 300px;
+//   display: inline-block;
+//   justify-content: space-between;
+//
+// }
+// #create-user {
+//   font-size: 25px;
+//   color: purple;
+//   background-color: #2196F3;
+//   margin-right: 25px;
+//   margin-left: 40px;
+//
+// }
+//
+// #update-user {
+//   font-size: 25px;
+//   color: purple;
+//   background-color: #2196F3;
+//   margin-left: 25px;
+//   marign-right: 25px;
+//
+// }
+//
+// #user-info {
+//   font-size: 25px;
+//   color: purple;
+//   background-color: #2196F3;
+//   margin-right: 25px;
+//   margin-left: 25px;
+// }
+//
+// #delete-user {
+//   font-size: 25px;
+//   color: purple;
+//   background-color: #2196F3;
+//   margin-right: 25px;
+//   margin-left: 25px;
+// }
 
 #create-profile-form {
-  margin-left: 25px
+  margin-left: 30px;
+  margin-right: 25px;
 }
 
 #show-user-info {
-  margin-left: 25px
+  margin-left: 30px;
+  margin-right: 25px;
+}
+
+// #show-user-likes {
+//  margin-left: 25px
+// }
+
+#likes-form {
+  margin-left: 30px;
+  margin-right: 25px;
+}
+
+.user {
+  display: none;
+  padding: 10px;
+}
+
+#user-profile-info {
+  margin-left: 40px;
+}
+
+.delete-user {
+  display: none;
+  padding: 10px;
 }
 
 #delete-profile {
-  margin-left: 25px;
-  margin-right: 2000px;
-}
-
-#likes-form {
-  margin-left: 25px;
+  margin-left: 30px;
+  margin-right: 5000px;
 }
 
 .border {

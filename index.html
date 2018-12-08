@@ -51,10 +51,10 @@
 
       <p id="message"></p>
 
-      <button id="create-user" class="button">Create Profile</button>
+      <!-- <button id="create-user" class="button">Create Profile</button>
       <button id="update-user" class="button">Update Profile</button>
       <button id="user-info" class="button">Profile Info?</button>
-      <button id="delete-user" class="button">Delete Profile</button>
+      <button id="delete-user" class="button">Delete Profile</button> -->
 
 
         <form id="sign-up" class="border">
@@ -99,14 +99,14 @@
         <div class="form-group">
           <input required type="text" name="user[User_Name]" placeholder="User Name" id="username">
           <input required type="text" name="user[Location]" placeholder="Location" id="userlocation">
-          <input required type="text" name="user[About]" placeholder="About" id="aboutuser">
+          <input required type="text" name="user[About]" placeholder="About you" id="aboutuser">
           <input required type="text" name="user[Gender_Identity]" placeholder="Gender Identity" id="useridentity">
           <input required type="text" name="user[Preferred_Pronoun]" placeholder="Preferred Pronoun" id="userpronoun">
         </div>
       </form>
 
     <form class="user" id="likes-form">
-      <button type="submit" class="btn btn-default">Likes?</button>
+      <button type="submit" class="btn btn-default">Likes and Interests?</button>
       <div class="form-group">
         <input required type="text" name="like[interests]" placeholder="Interests" id="userinterests">
         <input required type="text" name="like[five_fave_things]" placeholder="5 Fave Things" id="userfaves">
@@ -117,15 +117,19 @@
     </form>
 
     <form class="user" id="show-user-info">
-      <button type="submit" class="btn btn-default">User Info</button>
-
+      <button type="submit" class="btn btn-default">Show Current Profile</button>
     </form>
 
-    <form class="user" id="delete-profile">
+    <!-- <form class="user" id="show-user-likes">
+      <button type="submit" class="btn btn-default">User Likes</button>
+    </form> -->
+
+    <div id="user-profile-info"></div>
+
+    <form class="delete-user" id="delete-profile">
       <button type="submit" class="btn btn-default">Delete Profile</button>
     </form>
 
-    <div id="user-profile-info"></div>
         <h3></h3>
 
     </body>

@@ -23,6 +23,8 @@ const onSignIn = event => {
   api.signIn(data)
     .then(ui.signInSuccess)
     .catch(ui.signInFailure)
+  $('.user').css('display', 'grid')
+  $('#user-profile-info').html('Hello!')
 }
 
 const onChangePassword = event => {
@@ -40,7 +42,11 @@ const onSignOut = event => {
     .then(function () { store.user = {} })
   // .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
-  // $('.grid-container').css('display', 'none')
+  $('#create-profile-form').css('display', 'none')
+  $('#likes-form').css('display', 'none')
+  $('#show-user-info').css('display', 'none')
+  $('#delete-profile').css('display', 'none')
+  $('#user-profile-info').html('Goodbye!')
 }
 
 module.exports = {
