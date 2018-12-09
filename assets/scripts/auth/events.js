@@ -8,8 +8,6 @@ const store = require('../store.js')
 const onSignUp = event => {
   event.preventDefault()
   const data = getFormFields(event.target)
-  // take this data and send it to  our server
-  // using an HTTP request (POST)
   api.signUp(data)
     .then(ui.signUpSuccess)
     .catch(ui.signUpFailure)
@@ -23,8 +21,11 @@ const onSignIn = event => {
   api.signIn(data)
     .then(ui.signInSuccess)
     .catch(ui.signInFailure)
+  $('#change-password').show()
+  $('#sign-out').show()
   $('.user').css('display', 'grid')
   $('#user-profile-info').html('Hello!')
+  $('.delete-user').css('display', 'grid')
 }
 
 const onChangePassword = event => {
@@ -42,6 +43,8 @@ const onSignOut = event => {
     .then(function () { store.user = {} })
   // .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
+  $('#change-password').hide()
+  $('#sign-out').hide()
   $('#create-profile-form').css('display', 'none')
   $('#likes-form').css('display', 'none')
   $('#show-user-info').css('display', 'none')

@@ -20,13 +20,13 @@ const onUpdateProfileSuccess = function () {
 }
 
 const onShowUserInfoSuccess = function (data) {
-  console.log(data)
+  // console.log(data)
   const template = `<table style="width:100%">
     <tr>
-      <th>User Name</th>
-      <th>Location</th>
-      <th>About</th>
-      <th>Gender Identity</th>
+      <th>   User Name     </th>
+      <th>    Location     </th>
+      <th>    About You    </th>
+      <th> Gender Identity </th>
       <th>Preferred Pronoun</th>
     </tr>
     <tr>
@@ -40,7 +40,6 @@ const onShowUserInfoSuccess = function (data) {
 
   $('#user-profile-info').html(template)
   $('#message').html('Current Profile')
-  // reset form
   $('#show-user-info').trigger('reset')
 }
 
@@ -52,7 +51,6 @@ const onDeleteProfileSuccess = function () {
 const onFailure = function (response) {
   // log the error
   console.error(response)
-
   // display error to user
   $('#message').html('Something went wrong, please try again.')
 }
