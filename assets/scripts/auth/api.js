@@ -20,7 +20,7 @@ const signIn = data => {
 }
 
 const changePassword = data => {
-  console.log('in the change password method', store.user.token)
+  // console.log('in the change password method', store.user.token)
   return $.ajax({
     url: config.apiUrl + '/change-password',
     method: 'PATCH',
@@ -32,7 +32,7 @@ const changePassword = data => {
 }
 
 const signOut = () => {
-  console.log('in the sign out method', store.user.token)
+  // console.log('in the sign out method', store.user.token)
   return $.ajax({
     url: config.apiUrl + '/sign-out',
     method: 'DELETE',

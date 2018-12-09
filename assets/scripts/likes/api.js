@@ -14,6 +14,18 @@ const create = function (data) {
   })
 }
 
+// const showUserLikes = () => {
+//   console.log('show info', store.user.token)
+//   return $.ajax({
+//     url: config.apiUrl + '/users/' + store.user.id,
+//     method: 'GET',
+//     headers: {
+//       Authorization: 'Token token=' + store.user.token
+//     }
+//   })
+// }
+
 module.exports = {
   create
+  // showUserLikes
 }
