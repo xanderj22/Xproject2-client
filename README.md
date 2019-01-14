@@ -1,14 +1,16 @@
-"I Like You" A friending app  (I like you v.2 client)
+"I Like You" A friending app  (Xproject2-client)
 
 Links to github repositories:
-
+https://github.com/xanderj22/Xproject2-client
+https://github.com/xanderj22/rails-api-Xproject2
 
 Links to deployed sites:
+https://xanderj22.github.io/Xproject2-client/
+https://sheltered-atoll-80613.herokuapp.com
 
+Initial wire frame sketches are located here: xanderj22/Xproject2-client/public/Wire_Frames
 
-Initial wire frame sketches are located here: 
-
-A full-stack application created using HTMl, CSS, Javascript, jquery AJAX, Express API, Mongoose? and json.
+A full-stack application created using HTMl, CSS, Javascript, jquery AJAX, Postgres SQL, Ruby/Rails API, and json.
 
 My process involved referencing WDI course materials, reviewing online resources such as w3schools.com, reviewing the full-stack project issue queue, collaborating with other developers in training, and getting help from the amazing WDI instructors.
 
