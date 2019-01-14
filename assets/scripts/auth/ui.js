@@ -30,6 +30,11 @@ const signInSuccess = data => {
   $('#signinemail').val('')
   $('#signinpassword').val('')
   $('#signinpasswordconfirm').val('')
+  $('#change-password').show()
+  $('#sign-out').show()
+  $('.user').css('display', 'grid')
+  $('#user-profile-info').html('Hello!')
+  $('.delete-user').css('display', 'grid')
   // console.log('signInSuccess ran. Data is :', data)
 }
 

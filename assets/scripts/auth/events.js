@@ -21,11 +21,11 @@ const onSignIn = event => {
   api.signIn(data)
     .then(ui.signInSuccess)
     .catch(ui.signInFailure)
-  $('#change-password').show()
-  $('#sign-out').show()
-  $('.user').css('display', 'grid')
-  $('#user-profile-info').html('Hello!')
-  $('.delete-user').css('display', 'grid')
+  // $('#change-password').show()
+  // $('#sign-out').show()
+  // $('.user').css('display', 'grid')
+  // $('#user-profile-info').html('Hello!')
+  // $('.delete-user').css('display', 'grid')
 }
 
 const onChangePassword = event => {
@@ -41,7 +41,7 @@ const onSignOut = event => {
   $('#message').text('You are signed out!')
   api.signOut()
     .then(function () { store.user = {} })
-  // .then(ui.signOutSuccess)
+    .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
   $('#change-password').hide()
   $('#sign-out').hide()

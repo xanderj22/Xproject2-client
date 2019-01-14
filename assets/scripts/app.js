@@ -22,6 +22,9 @@ $(() => {
   $('#delete-profile').on('submit', userEvents.onDeleteProfile)
   $('#likes-form').on('submit', likesEvents.onLikesSubmit)
   $('#show-user-info').on('submit', userEvents.onShowUserInfo)
+
+  $('#change-password').hide()
+  $('#sign-out').hide()
   // $('#show-user-likes').on('submit', likesEvents.onShowUserLikes)
 })
 
