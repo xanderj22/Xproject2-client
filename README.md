@@ -37,14 +37,14 @@ User stories:
 
 Future versions and improvements might include:
 
-Better user experience:
+    Better user experience: 
 
-  -more user friendly layout
+      -more user friendly layout
   
-  -buttons that open forms to enter user data
+      -buttons that open forms to enter user data
   
-  -better display of user data
+      -better display of user data
   
-  -keyword search capability
+      -keyword search capability
   
-  -user interaction -- the ability to see other user profile data
+      -user interaction -- the ability to see other user profile data
