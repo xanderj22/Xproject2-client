@@ -19,12 +19,19 @@ My greatest struggles centered around storing and retrieving data, and figuring 
 User stories:
 
 -A user should be able to sign-up/create account with email and password.
+
 -A user should be able to sign-in with that account each time.
--A user should be able to enter and store user profile data
--A user should be able to update/change current profile data
--A user should be able to show/display current user profile
+
+-A user should be able to enter and store user profile data.
+
+-A user should be able to update/change current profile data.
+
+-A user should be able to show/display current user profile.
+
 -A user should be able to delete account and user profile data.
+
 -A user should be able to change password.
+
 -A user should be able to sign-out.
 
 
